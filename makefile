@@ -1,0 +1,2 @@
+build:
+	@cp src/* out/
