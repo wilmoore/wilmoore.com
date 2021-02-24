@@ -1,6 +1,6 @@
-.PHONY: all
+.PHONY: all clean
 
-all: out
+all: clean out
 	@cp src/* out/
 
 out:
