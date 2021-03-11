@@ -8,3 +8,6 @@ out:
 
 clean:
 	@rm -rf out
+
+update:
+	@git add . ; git commit -am 'update' ; git push
