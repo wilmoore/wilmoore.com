@@ -9,5 +9,5 @@ out:
 clean:
 	@rm -rf out
 
-update:
+session:
 	@git add . ; git commit -am 'update' ; git push
