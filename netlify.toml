@@ -2,3 +2,9 @@
   command = "make"
   functions = "functions"
   publish = "out"
+
+[[redirects]]
+  from = "/"
+  to = "https://standardresume.co/r/wilmoore"
+  status = 200
+  force = true
