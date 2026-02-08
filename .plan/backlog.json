@@ -26,9 +26,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:15:00Z"
     },
     {
       "id": 2,
@@ -43,9 +42,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:16:00Z"
     },
     {
       "id": 3,
@@ -60,9 +58,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:17:00Z"
     },
     {
       "id": 4,
@@ -92,9 +89,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:18:00Z"
     },
     {
       "id": 6,
@@ -109,9 +105,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:19:00Z"
     },
     {
       "id": 7,
@@ -126,9 +121,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:20:00Z"
     },
     {
       "id": 8,
@@ -143,9 +137,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:21:00Z"
     },
     {
       "id": 9,
@@ -160,9 +153,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:22:00Z"
     },
     {
       "id": 10,
@@ -177,9 +169,8 @@
       "sourceSpec": "spec-001",
       "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "in-progress",
-      "mvpBatch": true,
-      "mvpBatchStartedAt": "2026-02-08T20:00:00Z"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:23:00Z"
     }
   ]
 }
