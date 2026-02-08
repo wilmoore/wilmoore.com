@@ -1,0 +1,16 @@
+{
+  "lastSequence": 1,
+  "specs": [
+    {
+      "id": "spec-001",
+      "title": "PRD — wilmoore.com (Operator Surface v0)",
+      "filename": "spec-001-prd-wilmoore-com-operator-surface-v0.md",
+      "source": "clipboard",
+      "importedAt": "2026-02-08T12:00:00Z",
+      "extractedItems": {
+        "epics": 4,
+        "stories": 6
+      }
+    }
+  ]
+}
