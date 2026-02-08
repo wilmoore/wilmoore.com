@@ -1,0 +1,9 @@
+{
+  "lastSequence": 2,
+  "entries": [
+    {
+      "branch": "chore/repo-cleanup-vercel-migration",
+      "adrs": ["001-migrate-from-netlify-to-vercel.md", "002-archive-legacy-files-in-repo.md"]
+    }
+  ]
+}
