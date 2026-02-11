@@ -45,3 +45,7 @@ coverage/
 
 # Misc
 *.pem
+
+# npx dev runtime files (config files are tracked)
+.dev/pid.json
+.dev/log/

@@ -1,0 +1,8 @@
+{
+  "web": {
+    "command": "npm run dev -- -p {PORT}",
+    "preferredPort": 50737,
+    "healthCheck": "http://localhost:{PORT}",
+    "readyPattern": "Ready in"
+  }
+}
