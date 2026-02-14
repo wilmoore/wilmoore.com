@@ -17,8 +17,14 @@
       "tool": "Bash",
       "error": "git add app/ content.config.ts package.json package-lock.json tsconfig.json next.config.ts postcss.config.mjs next-env.d.ts eslint.config.mjs vercel.json public/ .gitignore .plan/mvp-wilmoore-com/ .pl",
       "status": "unresolved"
+    },
+    {
+      "timestamp": "2026-02-14T19:48:45Z",
+      "tool": "Bash",
+      "error": "npx tsc --noEmit content.config.ts app/page.tsx 2>&1",
+      "status": "unresolved"
     }
   ],
   "strikeCount": 1,
-  "lastErrorHash": "63055327"
+  "lastErrorHash": "a221e7a6"
 }

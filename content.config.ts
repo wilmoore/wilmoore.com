@@ -7,37 +7,48 @@
 
 export const CONTENT = {
   hero: {
-    statement: "I build, rescue, and ship systems that make money.",
+    lines: [
+      "I ship revenue systems.",
+      "I rescue the ones that stall.",
+    ],
+    tagline: "Diagnostic first. Build second.",
   },
 
   whatIDo: {
     items: [
-      "Build and ship AI-native systems and products",
-      "Rescue stalled or broken codebases",
-      "Teach practical AI through workshops and bootcamps",
+      "Codebase diagnostics for stalled or inherited systems",
+      "Revenue-tied AI product launches",
+      "AI workflow deployment inside engineering teams",
     ],
   },
 
   availability: {
     lines: [
-      "Open to contract or W-2 depending on fit.",
-      "Running Savvy AI workshops independently and with partners.",
+      "One engagement at a time.",
+      "Diagnostics prioritized.",
+      "Contract or W-2 depending on fit.",
     ],
   },
 
   proofOfWork: {
     links: [
-      { label: "SavvyAI.dev", href: "https://savvyai.dev", note: null },
-      { label: "CodeRescues.dev", href: "https://coderescues.dev", note: null },
-      { label: "oneresu.me", href: "https://oneresu.me", note: "in progress" },
-      { label: "GitHub", href: "https://github.com/wilmoore", note: null },
+      { label: "SavvyAI.dev", href: "https://savvyai.dev", tag: "AI training for teams" },
+      { label: "CodeRescues.dev", href: "https://coderescues.dev", tag: "codebase diagnostics & recovery" },
+      { label: "PDFPages.app", href: "https://pdfpages.app", tag: "shipped macOS utility" },
+      { label: "GitHub", href: "https://github.com/wilmoore", tag: "live repositories" },
     ],
+  },
+
+  cta: {
+    headline: ["Stalled build?", "Inherited mess?"],
+    buttonText: "Book a Codebase Diagnostic →",
+    buttonHref: "https://coderescues.dev",
   },
 
   contact: {
     email: {
       label: "Email",
-      href: "mailto:hello@wilmoore.com",
+      href: "mailto:wil.moore@wilmoore.com",
     },
     linkedin: {
       label: "LinkedIn",
@@ -48,5 +59,5 @@ export const CONTENT = {
 
 export const META = {
   title: "Wil Moore III",
-  description: "I build, rescue, and ship systems that make money.",
+  description: "I ship revenue systems. I rescue the ones that stall.",
 } as const;

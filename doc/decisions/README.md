@@ -20,3 +20,4 @@ We use the [Michael Nygard format](https://cognitect.com/blog/2011/11/15/documen
 
 - [001. Migrate from Netlify to Vercel](001-migrate-from-netlify-to-vercel.md)
 - [002. Archive legacy files in repo](002-archive-legacy-files-in-repo.md)
+- [003. Content-Driven Architecture](003-content-driven-architecture.md)

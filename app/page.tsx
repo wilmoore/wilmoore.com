@@ -10,14 +10,21 @@ export default function OperatorSurface() {
   return (
     <main className="min-h-screen px-6 py-16 md:px-12 md:py-24 lg:py-32">
       <div className="mx-auto max-w-2xl space-y-16 md:space-y-24">
-        {/* US-003: Single-sentence hero statement */}
+        {/* Hero */}
         <section aria-label="Hero">
           <h1 className="text-3xl font-medium leading-tight tracking-tight md:text-4xl lg:text-5xl">
-            {CONTENT.hero.statement}
+            {CONTENT.hero.lines.map((line, index) => (
+              <span key={index} className="block">
+                {line}
+              </span>
+            ))}
           </h1>
+          <p className="mt-6 text-lg font-medium text-neutral-600 md:text-xl">
+            {CONTENT.hero.tagline}
+          </p>
         </section>
 
-        {/* US-004: Scannable What I Do section */}
+        {/* What I Do */}
         <section aria-label="What I Do">
           <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-neutral-500">
             What I Do
@@ -29,7 +36,7 @@ export default function OperatorSurface() {
           </ul>
         </section>
 
-        {/* Availability section */}
+        {/* Availability */}
         <section aria-label="Availability">
           <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-neutral-500">
             Availability
@@ -41,7 +48,7 @@ export default function OperatorSurface() {
           </div>
         </section>
 
-        {/* US-005: Proof of Work links */}
+        {/* Proof of Work */}
         <section aria-label="Proof of Work">
           <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-neutral-500">
             Proof of Work
@@ -57,15 +64,15 @@ export default function OperatorSurface() {
                 >
                   {link.label}
                 </a>
-                {link.note && (
-                  <span className="ml-2 text-neutral-500">({link.note})</span>
+                {link.tag && (
+                  <span className="text-neutral-500"> — {link.tag}</span>
                 )}
               </li>
             ))}
           </ul>
         </section>
 
-        {/* US-006: Frictionless contact */}
+        {/* Contact */}
         <section aria-label="Contact">
           <h2 className="mb-6 text-sm font-medium uppercase tracking-widest text-neutral-500">
             Contact
@@ -90,6 +97,23 @@ export default function OperatorSurface() {
               </a>
             </li>
           </ul>
+        </section>
+
+        {/* CTA */}
+        <section aria-label="Call to Action">
+          <div className="text-lg md:text-xl">
+            {CONTENT.cta.headline.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+          </div>
+          <a
+            href={CONTENT.cta.buttonHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-block border border-neutral-800 px-6 py-3 text-lg font-medium transition-colors hover:border-neutral-900 hover:bg-neutral-900 hover:text-white md:text-xl"
+          >
+            {CONTENT.cta.buttonText}
+          </a>
         </section>
       </div>
     </main>
