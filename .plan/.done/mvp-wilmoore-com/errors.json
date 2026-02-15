@@ -1,0 +1,30 @@
+{
+  "attempts": [
+    {
+      "timestamp": "2026-02-08T16:47:50Z",
+      "tool": "Bash",
+      "error": "npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --turbopack --yes 2>&1",
+      "status": "unresolved"
+    },
+    {
+      "timestamp": "2026-02-08T16:49:54Z",
+      "tool": "Bash",
+      "error": "npm run build 2>&1",
+      "status": "unresolved"
+    },
+    {
+      "timestamp": "2026-02-08T16:50:46Z",
+      "tool": "Bash",
+      "error": "git add app/ content.config.ts package.json package-lock.json tsconfig.json next.config.ts postcss.config.mjs next-env.d.ts eslint.config.mjs vercel.json public/ .gitignore .plan/mvp-wilmoore-com/ .pl",
+      "status": "unresolved"
+    },
+    {
+      "timestamp": "2026-02-14T19:48:45Z",
+      "tool": "Bash",
+      "error": "npx tsc --noEmit content.config.ts app/page.tsx 2>&1",
+      "status": "unresolved"
+    }
+  ],
+  "strikeCount": 1,
+  "lastErrorHash": "a221e7a6"
+}

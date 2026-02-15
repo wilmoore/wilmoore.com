@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/resume",
+      "destination": "https://docs.google.com/document/d/1G5UbIQbBjW8kPJMBjnvhkqhdHYphjYS2QjD1SqHOjms/edit?usp=sharing",
+      "permanent": false
+    }
+  ]
+}

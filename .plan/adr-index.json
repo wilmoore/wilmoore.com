@@ -1,9 +1,13 @@
 {
-  "lastSequence": 2,
+  "lastSequence": 3,
   "entries": [
     {
       "branch": "chore/repo-cleanup-vercel-migration",
       "adrs": ["001-migrate-from-netlify-to-vercel.md", "002-archive-legacy-files-in-repo.md"]
+    },
+    {
+      "branch": "mvp/wilmoore-com",
+      "adrs": ["003-content-driven-architecture.md"]
     }
   ]
 }

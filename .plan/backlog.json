@@ -24,9 +24,10 @@
       "fingerprint": "spec|spec-001|epic|e001-operator-surface-rendering",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:15:00Z"
     },
     {
       "id": 2,
@@ -39,9 +40,10 @@
       "fingerprint": "spec|spec-001|epic|e002-credibility-signal-content",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:16:00Z"
     },
     {
       "id": 3,
@@ -54,9 +56,10 @@
       "fingerprint": "spec|spec-001|epic|e003-contact-enablement",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:17:00Z"
     },
     {
       "id": 4,
@@ -84,9 +87,10 @@
       "fingerprint": "spec|spec-001|story|us001-single-page-navigation",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:18:00Z"
     },
     {
       "id": 6,
@@ -99,9 +103,10 @@
       "fingerprint": "spec|spec-001|story|us002-minimal-editorial-layout",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:19:00Z"
     },
     {
       "id": 7,
@@ -114,9 +119,10 @@
       "fingerprint": "spec|spec-001|story|us003-hero-statement",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:20:00Z"
     },
     {
       "id": 8,
@@ -129,9 +135,10 @@
       "fingerprint": "spec|spec-001|story|us004-what-i-do-section",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:21:00Z"
     },
     {
       "id": 9,
@@ -144,9 +151,10 @@
       "fingerprint": "spec|spec-001|story|us005-proof-of-work-links",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:22:00Z"
     },
     {
       "id": 10,
@@ -159,9 +167,10 @@
       "fingerprint": "spec|spec-001|story|us006-frictionless-contact",
       "source": "/pro:spec.import",
       "sourceSpec": "spec-001",
-      "sourceBranch": null,
+      "sourceBranch": "mvp/wilmoore-com",
       "createdAt": "2026-02-08T12:00:00Z",
-      "status": "open"
+      "status": "resolved",
+      "resolvedAt": "2026-02-08T20:23:00Z"
     }
   ]
 }
