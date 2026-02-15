@@ -1,6 +1,18 @@
 {
-  "lastSequence": 12,
+  "lastSequence": 13,
   "items": [
+    {
+      "id": 13,
+      "title": "Social sharing setup",
+      "description": "Configure complete social sharing setup: OG image, favicons, OpenGraph meta tags, Twitter card tags, and JSON-LD structured data for LinkedIn, Twitter/X, Facebook, Slack, Discord, and iMessage previews.",
+      "category": "chore",
+      "severity": "medium",
+      "fingerprint": "chore|13|social-sharing-setup",
+      "source": "/pro:chore",
+      "sourceBranch": "chore/social-sharing-setup",
+      "createdAt": "2026-02-15T05:00:00Z",
+      "status": "in-progress"
+    },
     {
       "id": 12,
       "title": "Resume route rewrite to StandardResume",
@@ -11,7 +23,7 @@
       "source": "/pro:feature",
       "sourceBranch": "feat/resume-route",
       "createdAt": "2026-02-14T23:30:00Z",
-      "status": "in-progress"
+      "status": "complete"
     },
     {
       "id": 11,
