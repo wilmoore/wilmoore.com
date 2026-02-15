@@ -76,13 +76,15 @@ interface ServersConfig {
   [serverName: string]: ServerConfig
 }
 
+interface PidEntry {
+  pid: number
+  port: number
+  startTime: string
+  status: string
+}
+
 interface PidData {
-  [serverName: string]: {
-    pid: number
-    port: number
-    startTime: string
-    status: string
-  }
+  [serverName: string]: PidEntry
 }
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const projectRoot = path.resolve(__dirname, '..')
@@ -204,7 +206,7 @@ function detectPortFromOutput(output: string): number | null {
 }
 
 // Kill process using a specific port
-async function killProcessOnPort(port) {
+async function killProcessOnPort(port: number): Promise<void> {
   try {
     const { stdout } = await execAsync(`lsof -ti:${port}`)
     const pids = stdout
@@ -231,7 +233,7 @@ async function killProcessOnPort(port) {
 }
 
 // Start server
-async function startServer(serverName, logViewerCmd = null) {
+async function startServer(serverName: string, logViewerCmd: string | null = null): Promise<void> {
   const servers = loadServersConfig()
   const server = servers[serverName]
 
@@ -337,7 +339,7 @@ async function startServer(serverName, logViewerCmd = null) {
 
     // Health check
     const healthUrl = server.healthCheck
-      .replace('{PORT}', actualPort)
+      .replace('{PORT}', actualPort.toString())
       .replace(/{ROLE}/g, serverName)
 
     const isHealthy = await healthCheck(healthUrl)
@@ -386,7 +388,7 @@ async function startServer(serverName, logViewerCmd = null) {
 
         // Monitor if the server process is still running
         const monitorInterval = setInterval(async () => {
-          const stillRunning = await isProcessRunning(child.pid)
+          const stillRunning = child.pid ? await isProcessRunning(child.pid) : false
           if (!stillRunning) {
             console.log(`\n❌ Server ${serverName} (pid ${child.pid}) has stopped`)
             notifyError(serverName, 'Stopped unexpectedly')
@@ -413,14 +415,15 @@ async function startServer(serverName, logViewerCmd = null) {
       process.exit(1)
     }
   } catch (error) {
-    console.error(`Error starting ${serverName}:`, error.message)
-    notifyError(serverName, `Failed to start: ${error.message}`)
+    const message = error instanceof Error ? error.message : String(error)
+    console.error(`Error starting ${serverName}:`, message)
+    notifyError(serverName, `Failed to start: ${message}`)
     process.exit(1)
   }
 }
 
 // Stop servers
-async function stopServers(serverName = null) {
+async function stopServers(serverName: string | null = null): Promise<void> {
   const pidData = loadPidFile()
   const servers = loadServersConfig()
 
@@ -565,8 +568,9 @@ async function stopServers(serverName = null) {
           notifyInfo(name, 'Force stopped')
         }
       } catch (error) {
-        console.error(`Error stopping ${name}:`, error.message)
-        notifyError(name, `Error stopping: ${error.message}`)
+        const message = error instanceof Error ? error.message : String(error)
+        console.error(`Error stopping ${name}:`, message)
+        notifyError(name, `Error stopping: ${message}`)
       }
     } else {
       console.log(`${name} process not running, cleaning up ports...`)
@@ -647,7 +651,7 @@ async function stopServers(serverName = null) {
             throw new Error(`Could not reclaim port ${portToReclaim}`)
           }
         } catch (error) {
-          if (error.message && error.message.includes('Could not reclaim')) {
+          if (error instanceof Error && error.message.includes('Could not reclaim')) {
             throw error
           }
           // lsof error means no process on port - we're done!
@@ -790,7 +794,7 @@ async function listServers() {
 }
 
 // Show logs for a server
-async function showLogs(serverName) {
+async function showLogs(serverName?: string): Promise<void> {
   const pidData = loadPidFile()
 
   if (!serverName) {
@@ -857,9 +861,9 @@ async function showLogs(serverName) {
 }
 
 // Cleanup stale entries
-async function cleanup() {
+async function cleanup(): Promise<void> {
   const pidData = loadPidFile()
-  const cleanedData = {}
+  const cleanedData: Record<string, PidEntry> = {}
 
   for (const [name, data] of Object.entries(pidData)) {
     const isRunning = await isProcessRunning(data.pid)
@@ -1088,10 +1092,10 @@ function initializeDevEnvironment() {
 
   // Define patterns to detect server scripts
   const serverPatterns = ['dev', 'start', 'serve', 'preview']
-  const inferredServers = {}
+  const inferredServers: Record<string, { command: string; preferredPort: number; healthCheck: string }> = {}
   let portCounter = 3000
 
-  for (const [scriptName, scriptCommand] of Object.entries(scripts)) {
+  for (const [scriptName, scriptCommand] of Object.entries(scripts) as [string, string][]) {
     // Check if script name matches server patterns
     const isServerScript = serverPatterns.some(
       pattern =>
@@ -1331,7 +1335,7 @@ switch (actualCommand) {
     break
 
   case 'logs':
-    await showLogs(actualServerName)
+    await showLogs(actualServerName ?? undefined)
     break
 
   case 'port': {
