@@ -1,6 +1,18 @@
 {
-  "lastSequence": 11,
+  "lastSequence": 12,
   "items": [
+    {
+      "id": 12,
+      "title": "Resume route rewrite to StandardResume",
+      "description": "Add /resume route that rewrites to https://standardresume.co/r/wilmoore (user stays on wilmoore.com/resume).",
+      "category": "feature",
+      "severity": "medium",
+      "fingerprint": "feature|12|resume-route-rewrite",
+      "source": "/pro:feature",
+      "sourceBranch": "feat/resume-route",
+      "createdAt": "2026-02-14T23:30:00Z",
+      "status": "in-progress"
+    },
     {
       "id": 11,
       "title": "Repo cleanup for Vercel migration",
