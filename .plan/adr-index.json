@@ -1,5 +1,5 @@
 {
-  "lastSequence": 3,
+  "lastSequence": 4,
   "entries": [
     {
       "branch": "chore/repo-cleanup-vercel-migration",
@@ -8,6 +8,10 @@
     {
       "branch": "mvp/wilmoore-com",
       "adrs": ["003-content-driven-architecture.md"]
+    },
+    {
+      "branch": "feat/homepage-messaging-rewrite",
+      "adrs": ["004-case-study-screenshot-carousel.md"]
     }
   ]
 }

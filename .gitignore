@@ -49,3 +49,6 @@ coverage/
 # npx dev runtime files (config files are tracked)
 .dev/pid.json
 .dev/log/
+
+# Playwright MCP runtime
+.playwright-mcp/
