@@ -1,0 +1,12 @@
+{
+  "attempts": [
+    {
+      "timestamp": "2026-07-31T02:18:55Z",
+      "tool": "Bash",
+      "error": "find \"/Users/wilmooreiii/Library/Application Support/CleanShot/media/\" -name \"*.png\" -mmin -3 2>/dev/null | xargs ls -lt",
+      "status": "unresolved"
+    }
+  ],
+  "strikeCount": 1,
+  "lastErrorHash": "cda857b6"
+}

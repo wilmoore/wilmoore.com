@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { META } from "@/content.config";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+});
+
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -57,7 +64,7 @@ const jsonLd = {
         "https://linkedin.com/in/wilmoore",
         "https://github.com/wilmoore",
       ],
-      jobTitle: "Software Engineer",
+      jobTitle: "Revenue Systems Architect",
       description: META.description,
     },
   ],
@@ -76,7 +83,9 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${geistSans.variable} font-sans antialiased`}>
+      <body
+        className={`${geistSans.variable} ${playfairDisplay.variable} font-sans antialiased`}
+      >
         {children}
       </body>
     </html>

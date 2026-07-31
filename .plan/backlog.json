@@ -1,6 +1,18 @@
 {
-  "lastSequence": 13,
+  "lastSequence": 14,
   "items": [
+    {
+      "id": 14,
+      "title": "Homepage Messaging Rewrite",
+      "description": "Redesign homepage to position Wil Moore as Revenue Systems Architect. Replace engineering-focused copy with operational intelligence positioning. Add Hero, How I Work process, Featured Case Study (Photography Operations Platform), Additional Work cards, and executive-level About section.",
+      "category": "feature",
+      "severity": "high",
+      "fingerprint": "feature|14|homepage-messaging-rewrite",
+      "source": "/pro:feature",
+      "sourceBranch": "feat/homepage-messaging-rewrite",
+      "createdAt": "2026-07-30T12:00:00Z",
+      "status": "in-progress"
+    },
     {
       "id": 13,
       "title": "Social sharing setup",
