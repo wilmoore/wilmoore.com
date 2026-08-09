@@ -8,16 +8,16 @@
 
 export const CONTENT = {
   hero: {
-    headline: ["Revenue leaks hide everywhere.", "I find them. I fix them."],
+    headline: ["Your operation is losing money.", "You just can't see where."],
     supportingCopy: [
-      "If your platform isn't running, it's costing you money. I fix that.",
+      "Operational bottlenecks quietly cost organizations money. I diagnose the root cause, eliminate it, and build systems that prevent it from coming back.",
     ],
     primaryCta: {
       text: "Book a Revenue Systems Diagnostic",
       href: "https://linkedin.com/in/wilmoore",
     },
     secondaryCta: {
-      text: "View Case Studies",
+      text: "Explore Case Studies",
       href: "#case-studies",
     },
   },
