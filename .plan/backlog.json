@@ -1,6 +1,19 @@
 {
-  "lastSequence": 14,
+  "lastSequence": 15,
   "items": [
+    {
+      "id": 15,
+      "title": "Hero Messaging Update",
+      "description": "Update hero copy to make value proposition immediately obvious. New headline: 'Your operation is losing money. You just can't see where.' Supporting copy emphasizes operational bottlenecks and diagnostic approach. Target audience: executives and business leaders.",
+      "category": "feature",
+      "severity": "medium",
+      "fingerprint": "feature|15|hero-messaging-update",
+      "source": "/pro:feature",
+      "sourceBranch": "feat/hero-messaging-update",
+      "createdAt": "2026-07-30T22:35:00Z",
+      "status": "resolved",
+      "resolvedAt": "2026-08-09T21:35:11Z"
+    },
     {
       "id": 14,
       "title": "Homepage Messaging Rewrite",
